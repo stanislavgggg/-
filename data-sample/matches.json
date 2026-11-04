@@ -1,0 +1,62 @@
+{
+  "_readme": "Hockey matches + model picks. One object per match. 'pick' = home | away | exact team name. 'start' in ISO 8601 with offset. Optional 'result': {score} — the FINAL score including overtime / shootout (no draws), or use /result <id> <score> in the bot. Times like now+90 = minutes from now (tests only). Teams here are fictional test data.",
+  "matches": [
+    {
+      "id": "hk-001",
+      "sport": "hockey",
+      "competition": "NHL",
+      "home": "North Bears-test",
+      "away": "South Hawks-test",
+      "start": "now+90",
+      "models": [
+        { "name": "Modelis 1", "pick": "home", "rationale": "Mājās uzvarējuši 7 no pēdējām 9 spēlēm." },
+        { "name": "Modelis 2", "pick": "home", "rationale": "Viesu vārtsargs nospēlēja arī vakar." },
+        { "name": "Modelis 3", "pick": "away", "rationale": "Viesiem labāks vairākuma realizācijas procents." },
+        { "name": "Modelis 4", "pick": "home", "rationale": "Vairāk metienu pa vārtiem katrā spēlē šajā sezonā." }
+      ]
+    },
+    {
+      "id": "hk-002",
+      "sport": "hockey",
+      "competition": "Latvijas virslīga",
+      "home": "Rīga-test",
+      "away": "Liepāja-test",
+      "start": "now+300",
+      "models": [
+        { "name": "Modelis 1", "pick": "away", "rationale": "Viesi uzvarēja abās šīs sezonas spēlēs." },
+        { "name": "Modelis 2", "pick": "Liepāja-test", "rationale": "Labāka aizsardzība pēdējās 5 spēlēs." },
+        { "name": "Modelis 3", "pick": "home", "rationale": "Mājas laukuma priekšrocība." }
+      ]
+    },
+    {
+      "id": "hk-003",
+      "sport": "hockey",
+      "competition": "NHL",
+      "home": "Team X",
+      "away": "Team Y",
+      "start": "now+400",
+      "models": [
+        { "name": "Modelis 1", "pick": "home", "rationale": "This one needs a human because data is thin." },
+        { "name": "Modelis 2", "pick": "away", "rationale": "Līdzīgi spēki." }
+      ]
+    },
+    {
+      "id": "hk-004",
+      "sport": "hockey",
+      "competition": "SHL",
+      "home": "Komanda A",
+      "away": "Komanda B",
+      "start": "now+200",
+      "models": [ { "name": "Modelis 1", "pick": "home", "rationale": "Forma." } ]
+    },
+    {
+      "id": "bb-001",
+      "sport": "basketball",
+      "competition": "NHL-like name but basketball",
+      "home": "Hoops A",
+      "away": "Hoops B",
+      "start": "now+150",
+      "models": [ { "name": "Modelis 1", "pick": "home", "rationale": "Forma." } ]
+    }
+  ]
+}
